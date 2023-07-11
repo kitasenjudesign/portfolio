@@ -1,0 +1,112 @@
+html
+    head
+        title SUPER SLIT SCAN | Kitasenju Design
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        meta(name="description" content="Kitasenju Design is researching and developing visual expression on screen.")
+        meta(property="og:title" content="Kitasenju Design / 北千住デザイン")
+        meta(property="og:type" content="website")
+        meta(property="og:url" content="https://kitasenjudesign.com/")
+        meta(property="og:image" content="https://kitasenjudesign.com/v3/img/05.png")
+        meta(property="og:site_name" content="Kitasenju Design / 北千住デザイン")
+        meta(meta property="og:description" content="Kitasenju Design is researching and developing visual expression on screen.")
+
+        - var cache = Math.random()
+            link(rel="stylesheet" href=`./css/index.css?${cache}`)
+            //script(src=`./app.processed.js?${cache}`)
+
+    body
+
+        h1
+            | SUPER-SLIT-SCAN
+            br
+            span.subTitle video installation version
+
+        .texts
+            .columnText
+                | 「魔法の美術館」
+                | 展のための作ったリアルタイム・スリットスキャン体験装置。
+                | スリットスキャンとは、
+                | 時間が異なる複数のフレームから１枚の画像として再構成する手法で、
+                | 時空が歪んだような不思議な映像効果が得られます。
+                | ここでは時間tのみならず、フレームのxy座標も変位の対象とし、
+                | (x,y,t)から(x',y')に巧妙に射影することで、新しいスリットスキャンの可能性を探ります。
+                | 使い古された手法ですが、新しい視点を追加することは可能でしょうか？
+
+            .columnText 
+                | A slit-scan experience device created for the Magic Museum exhibition. Slit scan is a method of reconstructing a single image from multiple frames at different times. Here, not only the time t but also the xy-coordinates of the frames are subject to displacement, and by constructing (x,y,t) in a complex way, we are exploring new slit-scan possibilities. It is a well-worn method, but we are looking for a slightly new perspective.
+        
+
+        .container
+            img(src="./img/img01.jpg")
+            .responsive-container
+                iframe(class="youtube" src="https://www.youtube.com/embed/OHquuSkNJA8" frameborder="0" allowfullscreen)
+        
+
+        h2 Exhibition
+
+        .texts
+            
+            .columnText
+                |「魔法の美術館」展の一作品として以下に出品
+
+            .columnText
+                | As part of the "Magic Museum (魔法の美術館)" exhibition
+
+            .columnText
+                | 2022 
+                a(href="https://www.santomyuze.com/museumevent/mahou-museum_2022/") 上田市立美術館
+                br
+                | 2023 
+                a(href="https://www.ntsec.gov.tw/article/detail.aspx?a=5070") 國立臺灣科學教育館
+                br
+                | 2023 
+                a(href="https://saga-museum.jp/museum/") 佐賀県立美術館
+                br
+                | 2023 
+                a(href="http://www.hpam.jp/museum/mahou-museum/") 広島県立美術館
+                br
+                | 2023 
+                a(href="https://www.sogo-seibu.jp/common/museum/") そごう美術館
+
+            .columnText
+                | 2022 Ueda City Museum of Art
+                br
+                | 2023 National Taiwan Science Education Center
+                br
+                | 2023 Saga Prefecture Museum of Art
+                br
+                | 2023 Hiroshima Prefecture Museum of Art
+                br
+                | 2023 Sogo Museum of Art
+
+        h2 Reference
+
+        .texts
+            .columnText        
+                | 本作は直接的にはFrancois Vogelの作品に触発されいます。
+                | ただし多くのSlitScan作品を参考にしており、こちらにまとめています。
+                br
+                a(href="https://scrapbox.io/slitscan/") SLITSCAN RESEARCH
+                br
+                br
+                | また、本作は元々は
+                a(href="https://kitasenjudesign.com/slitscan/") iOSアプリ
+                | としてリリースしたものを
+                | インスターレション用に再編しています。
+            .columnText        
+                | Although directly inspired by the work of Francois Vogel, 
+                | we also use many other works as references. 
+                | Here is a list of reference works.
+                br
+                a(href="https://scrapbox.io/slitscan/") SLITSCAN RESEARCH 
+                br
+                br
+                | In addition, this work was originally released as an 
+                a(href="https://kitasenjudesign.com/slitscan/") iOS app
+                | that was reorganized for instalation.
+
+        footer
+            .myFooter ©2023 
+                a(href="https://kitasenjudesign.com/") Kitasenju Design
